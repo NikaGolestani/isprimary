@@ -2,7 +2,6 @@ while True:
     num=int(input('num='))
     if num>1:
         arr=[]
-        primaryarr=[]
         for i in range(2,round((num/2)+1)):
             if num%i==0:
                 arr.append(i)
@@ -18,10 +17,10 @@ while True:
                 lenarr-=1
 
         if len(arr)!=0:
-            print(f'{num} is not a primary number \n {num}:{arr}')
+            print(f'{num} is not a prime number \n {num}:{arr}')
         else:
-            print(f'{num} is a primary number')
+            print(f'{num} is a prime number')
     elif num<0:
         print(f'{num} is an invalid input')
     else:
-        print(f'{num} is not a primary number')
+        print(f'{num} is not a prime number')
