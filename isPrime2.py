@@ -17,6 +17,10 @@ if x>1:
      arr.append (i)
     x=x//i
     break
+   elif x**0.5<i:
+    arr.append(x)
+    x=1
+    break
 #eliminate NOT prime numbers
  for b in arr:
   for a in arr:
